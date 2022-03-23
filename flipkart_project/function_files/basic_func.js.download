@@ -1,0 +1,212 @@
+// function hello() {
+//     console.log('helllow');
+//     console.log('world');
+//     console.log('hello');
+// }
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//     hello()
+
+// }
+
+
+
+// example 2=-----------------------------
+
+// function greet(name) {
+//     for (let i = 0; i < name.length; i++) {
+//         console.log(i);
+//     }
+// }
+// greet(todos)
+
+
+
+// ex 3-------------------------------------
+
+
+
+// function repeat(str, numTimes) {
+//     for (let i = 0; i < numTimes; i++) {
+//         console.log(str);
+//     }
+// }
+
+
+// repeat('hello', 10)
+
+
+// ex 4------------------------------------
+
+
+// let die1 = Math.floor(Math.random() * 6) + 1
+// let die2 = Math.floor(Math.random() * 6) + 1
+// function isSnakeEyes(die1, die2) {
+//     if (die1 === 1 && die2 === 1) {
+//         console.log(`isSnakeEyes : ${die1} and ${die2}`);
+//     } else {
+//         console.log(`not snake eyes :${die1} and ${die2}`);
+//     }
+// }
+
+
+// ex-4 return keyword-------------------------------------
+
+// function add(x, y) {
+//     console.log(x * y);
+// }
+
+
+// // eg-5-----------------------------
+
+
+// function capitalize(str) {
+//     let firstLetter = str[0]
+//     firstLetter = firstLetter.toUpperCase();
+//     return firstLetter + str.Shift()
+// }
+
+
+
+
+// ex 5--------------------------------- funtion scope
+
+
+
+// const creature = "Common Sea Dragon";
+
+// function scubaDive() {
+//     const creature = "Spanish Dancer"; //A type of sea slug
+//     console.log(creature);
+// }
+
+// scubaDive();
+
+
+// ex-6 ------------- expression function
+
+
+// type 1-------
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+
+// type 2------------
+
+// const add = function (x, y) {
+//     return x + y;
+// }
+
+
+
+
+
+// ex-7    higher order function-------------------
+// function callTenTimes(y) {
+//     for (let i = 0; i < 10; i++) {
+//         y()
+//     }
+// }
+// function rollDie() {
+//     const roll = Math.floor(Math.random() * 6) + 1
+//     console.log(roll);
+
+// }
+// callTenTimes(rollDie)
+
+
+
+// ex-7---------------------------------
+
+
+
+// function aquib(min, max) {
+//     return function (num) {
+//         return (num >= min && num <= max)
+//     }
+
+// }
+
+
+// let shera = {
+//     suhaib: 21,
+//     square(num) {
+//         return num * num
+//     },
+//     asif(num) {
+//         return num ** 3
+//     }
+// }
+
+// let cat = {
+//     name: 'blue steele',
+//     age: 20,
+//     meow() {
+//         console.log(this.name);
+//     }
+// }
+
+
+
+// ex-10=---------------------------------
+
+
+// egg count execise
+
+// let hen = {
+//     name: 'Helen',
+//     eggCount: 0,
+//     layAnEgg() {
+//         this.eggCount++
+//         return 'EGG'
+//     }
+
+// }
+
+
+// function tiger(x) {
+//     for (let i = 1; i < x; i = i + 2) {
+//         console.log(i);
+//     }
+// }
+// function eligeble(age) {
+//     if (age > 0 && age <= 5) {
+//         console.log('free hai');
+//     }
+//     else if (age >= 6 && age <= 10)
+//         console.log(`${age} pay 10$ `);
+//
+
+// let num = prompt('enter a number')
+// if (num % 3 == 0 && num % 5 == 0) {
+//     console.log('FizzFuzz');
+// }
+// else if (num % 3 == 0) {
+//     console.log('Fizz');
+// }
+// else if (num % 5 == 0) {
+//     console.log('Fuzz');
+// }
+
+
+
+
+
+
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// function makeBetweenFunc(min, max) {
+//     return function (num) {
+//         return num >= min && num <= max
+//     }
+// }
+
+
+function add(x, y) {
+    return x + y;
+}
